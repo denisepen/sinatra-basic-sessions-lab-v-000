@@ -14,7 +14,7 @@ class App < Sinatra::Base
 
   post '/checkout' do
    binding.pry
-  session[:item] = "socks"
+  session[:item] = params[:item]
 
     @session = session
 
